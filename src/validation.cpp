@@ -926,8 +926,8 @@ static bool AcceptToMemoryPoolWorker(
             !AllowFree(entry.GetPriority(chainActive.Height() + 1))) {
             // Require that free transactions have sufficient priority to be
             // mined in the next block.
-            return state.DoS(0, false, REJECT_INSUFFICIENTFEE,
-                             "insufficient priority");
+//            return state.DoS(0, false, REJECT_INSUFFICIENTFEE,
+//                             "insufficient priority");
         }
 
         // Continuously rate-limit free (really, very-low-fee) transactions.
